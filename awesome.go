@@ -6,7 +6,14 @@ import (
 	"rsc.io/quote"
 )
 
-func main() {
+// This method calls two method one from our own created package and other from quote package.
+
+func CallToSubPackages()  {
 	fmt.Println(morestrings.ReverseRunes("!oG ,olleH"))
 	fmt.Println(quote.Go())
+}
+
+// This method start our module
+func main() {
+	CallToSubPackages()
 }
